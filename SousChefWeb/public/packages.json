@@ -1,0 +1,31 @@
+[
+  {
+    "price":"$300",
+    "planname":"Budget",
+    "plantype":"Monthly Plan",
+	"planimage":"01",
+    "description":"We provide basic ingredients for lunch and dinner from the cooler for 3 days/week for the choosen month in this plan."
+  },
+  {
+    "price":"$450",
+    "planname":"Standard",
+    "plantype":"Monthly Plan",
+	"planimage":"02",
+    "description":"We provide ingredients for breakfast, lunch and dinner from the cooler for 4 days/week for the choosen month in this plan."
+  },
+  {
+    "price":"$600",
+    "planname":"Premium",
+    "plantype":"Monthly Plan",
+	"planimage":"03",
+    "description":"We provide ingredients for a month of healthy, Make-Ahead breakfasts, lunches and dinners from our expert professional chefs."
+  },
+  {
+    "price":"$750",
+    "planname":"Crystal",
+    "plantype":"Monthly Plan",
+	"planimage":"04",
+    "description":"We provide ingredients for a month of (Truly) 30-minute meals for breakfasts, lunches and dinner from the recommendations of our head chef.                                            "
+  }
+  
+]

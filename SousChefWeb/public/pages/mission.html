@@ -1,0 +1,60 @@
+<style>
+body{
+		background-color: #000000;
+	}
+	 #pageHeader{
+       margin-top: 100px;
+       margin-left: 100px;
+       margin-bottom: 0;
+   }
+   
+</style>
+
+<section id="pageHeader">
+
+<div class="page-header">
+  <h1 style="color:#FFB03B">The mission of art is to represent nature not to imitate her</h1>
+</div>
+
+</section>
+
+<div class="container">
+  <div class="jumbotron" style="background-image:url('http://cdn.wonderfulengineering.com/wp-content/uploads/2014/10/wood-wallpaper-20.jpg')">
+    <h3>Anyone can cook and our mission is to make home cooking fun and accesible</h3>
+  </div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<h2 style="color:#FFB03B">Mission Statements</h2>
+	</div>
+</div>
+<div class="carousel-reviews broun-block">
+    <div class="container">
+        <div class="row">
+            <div id="carousel-reviews" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="item active" ng-repeat="missionState in missionQuotes">
+                	    <div class="col-md-3 col-sm-6">
+        				    <div class="block-text rel zmin">
+						        <h4>{{missionState.stateHead}}</h4>
+							    <p>{{missionState.statement}}</p>						    
+							<ins class="ab zmin sprite sprite-i-triangle block"></ins>
+					        </div>
+							<div class="person-text rel">
+				                <img ng-src="img/thumbs/{{missionState.missionImage}}.jpg" class="img-responsive" alt=""/>
+								<a title="" href="#" style="color:crimson">{{missionState.missionName}}</a>
+								<i style="color:#7d4702">{{missionState.fromPlace}}</i>
+							</div>
+						</div>
+            		</div>
+                                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br><br><br>
+

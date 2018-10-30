@@ -1,0 +1,132 @@
+<div id="fullscreen_bg" class="fullscreen_bg"/>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9 col-lg-offset-1 col-md-9 col-md-offset-1 col-sm-9 col-md-offset-1 col-xs-10 col-xs-offset-1 user-tab-container">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 user-tab-menu">
+              <ul class="list-group">
+                <a href="#" class="list-group-item active">
+                    <i class="fa fa-address-book-o fa-lg" aria-hidden="true"></i> <br/>Welcome<br/>Page
+                  </a>
+                <a href="#" class="list-group-item ">
+                    <i class="fa fa-id-card fa-lg" aria-hidden="true"></i><br/>User<br/>Details
+                </a>  
+                <a href="#" class="list-group-item ">
+                    <i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i><br/> My<br/>Orders
+                </a>
+                <a href="#" class="list-group-item">
+                  <i class="glyphicon glyphicon-wrench"></i> <br/>Any<br/>Other
+                </a>
+              </ul>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9 user-tab">
+                <!-- flight section -->
+                <div class="user-tab-content active">
+                    <div class="text-center jumbotron">
+                      
+                      <h2>Welcome</h2>
+                        <strong>{{user.name}}</strong><br/>
+                        <div>
+                            <img id="dp" src="../img/userpagedefault.png" alt="userpic">
+                        </div>
+                        <div id="changedp" class="img-fluid">
+                            <span class="btn btn-default btn-primary btn-xs btn-file">Change Pic
+                                <input id="dpinput" type="file" accept= "image/*" class="form-control"  >
+                            </span>
+                        </div>
+                    </div>
+                </div>
+              
+              
+                <div class="user-tab-content">
+                    <div class="text-center">
+
+                <div class="panel panel-default">
+                <div class="panel-body">
+                    <h3 class="text-center">
+                        User Information</h3>
+                    <form id="userdetailform" class="form form-userdetails" role="form">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon">Name</span>
+                                <input type="text" class="form-control" placeholder="Name" ng-model="user.name" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                                <input type="Text" class="form-control" placeholder="Email" ng-model="user.email" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-mobile" aria-hidden="true"></i></span>
+                                <input type="Text" class="form-control" placeholder="Phone No"   />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-address-card" aria-hidden="true"></i> Street 1</span>
+                                <input type="Text" class="form-control" placeholder="Address Street 1" ng-model="user.addressLine1" />
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-address-card" aria-hidden="true"></i> Street 2</span>
+                                <input type="Text" class="form-control" placeholder="Address Street 2" ng-model="user.addressLine2" />
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-address-card" aria-hidden="true"></i> City</span>
+                                <input type="Text" class="form-control" placeholder="City" ng-model="user.city" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-address-card" aria-hidden="true"></i> Zipcode</span>
+                                <input type="Text" class="form-control" placeholder="Zipcode" ng-model="user.zipcd" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-address-card" aria-hidden="true"></i> State</span>
+                                <input type="Text" class="form-control" placeholder="State" ng-model="user.state" />
+                            </div>
+                        </div>
+
+                        <a id="edituser" ng-href="#" class="btn btn-sm btn-primary" role="button">
+                            <span class="glyphicon glyphicon-edit"></span>Edit</a> 
+                        <button id="saveuser" class="btn btn-sm btn-primary" role="button">Save</button>
+                        </form>
+                    </div>
+        
+                    </div>
+                </div>
+                </div>
+               
+                <div class="user-tab-content">
+                    <div class="text-center jumbotron">
+                      <i class="fa fa-shopping-cart fa-4x" aria-hidden="true"></i>
+                      <h2 style="color:#00001a"><a href="" class="btn btn-sm btn-primary btn-block" role="button">My Orders</a></h2>
+                      
+                    </div>
+                    <div>
+                        <h3 style="color:#00001a">My Orders</h3>
+                    </div>
+                </div>
+                
+                <div class="user-tab-content">
+                    <div class="text-center">
+                      <h1 class="glyphicon glyphicon-transfer" style="font-size:12em;color:#00001a"></h1>
+                      <h2 style="margin-top: 0;color:#00001a"><a href="" class="btn btn-sm btn-primary btn-block" role="button">Any Other</a></h2>
+                      <h3 style="margin-top: 0;color:#00001a">Any other</h3>
+                    </div>  
+                </div>
+            </div>
+        </div>
+  </div>
+</div>

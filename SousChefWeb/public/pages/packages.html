@@ -1,0 +1,161 @@
+
+
+
+<style>
+    #package1{
+       margin-top: 100px;
+       margin-left: 100px;
+       margin-bottom: 0;
+   }
+   
+  
+   
+	
+	body{
+		background-color: #000000;
+	}
+   
+        header {display:block; font-size:1.2em;margin-bottom:100px;}
+        header a, header span {
+            display: inline-block;
+            padding: 4px 8px;
+            margin-right: 10px;
+            border: 2px solid #000;
+            background: #DDD;
+            color: #000;
+            text-decoration: none;
+            text-align: center;
+            height: 20px;
+        }
+        header span {background:white;}
+        a {color: #1155CC;}
+		
+		
+</style>
+
+<!-- Container starts -->
+<section id="package1">
+<div class="row-fluid PageHead">
+         <!-- Description Start -->
+         <div class="span12">
+            <h1>Meal Gallery & Offer Packages</h1>
+            
+         </div>
+      </div>
+      <!-- Description End -->
+</section>
+
+<br><br>
+
+
+<h3 style="color:#777; margin-left:100px">Get a package for your everyday diet</h3>
+   <div class="container">
+      <!-- Contaner Starts -->
+      
+      <div class="row-fluid">
+         <!-- Row2 start -->
+         <div class="span3 PlanPricing template4" ng-repeat="package in packaging">
+            <!-- Price template4 Starts -->
+            <div class="planName">
+               <span class="price" style="color:#FFB03B">{{package.price}}</span>
+               <h3>{{package.planname}}</h3>
+               <p>{{package.plantype}}</p>
+            </div>
+            <div class="planFeatures">
+               <ul>
+                  <li><img id="packageImg" ng-src="img/packages/{{package.planimage}}.jpg" class="img-responsive" alt=""></li>
+                  <li>{{package.description}}</li>
+               </ul>
+            </div>
+            <p> <a href="#	" role="button" data-toggle="modal" class="btn btn-success btn-large" style="color:#FFB03B">Add to cart </a> </p>
+         </div>
+         <!-- Price template4 Ends -->
+      </div>
+      <!-- Row2 ends -->
+      <br><br> <br><br> <br><br>
+	  
+	  
+   </div>
+
+
+
+<br><br>
+   
+
+   <!-- Container ends -->
+
+
+<h3 style="color:#777; margin-left:100px">Checkout our specialities</h3>
+
+<!--start-->
+    <div style="width:1000px;margin:80px auto;">
+        <div id="ninja-slider" style="float:left;">
+            <div class="slider-inner">
+                <ul>
+                    <li><a class="ns-img" href="img/thumbs/1.jpg"></a></li>
+                    <li><a class="ns-img" href="img/thumbs/2.jpg"></a></li>
+                    <li><a class="ns-img" href="img/thumbs/3.jpg"></a></li>
+                    <li><a class="ns-img" href="img/thumbs/4.jpg"></a></li>
+                    <li><a class="ns-img" href="img/thumbs/5.jpg"></a></li>
+                    <li><a class="ns-img" href="img/thumbs/6.jpg"></a></li>
+                    <li><a class="ns-img" href="img/thumbs/7.jpg"></a></li>
+                    <li><a class="ns-img" href="img/thumbs/8.jpg"></a></li>
+                    <li><a class="ns-img" href="img/thumbs/9.jpg"></a></li>
+                    <li><a class="ns-img" href="img/thumbs/10.jpg"></a></li>
+                    <li><a class="ns-img" href="img/thumbs/11.jpg"></a></li>
+                    <li><a class="ns-img" href="img/thumbs/12.jpg"></a></li>
+                </ul>
+                <div class="fs-icon" title="Expand/Close"></div>
+            </div>
+        </div>
+        <div id="thumbnail-slider" style="float:left;">
+            <div class="inner">
+                <ul>
+                    <li>
+                        <a class="thumb" href="img/thumbs/1.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="img/thumbs/2.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="img/thumbs/3.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="img/thumbs/4.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="img/thumbs/5.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="img/thumbs/6.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="img/thumbs/7.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="img/thumbs/8.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="img/thumbs/9.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="img/thumbs/10.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="img/thumbs/11.jpg"></a>
+                    </li>
+                    <li>
+                        <a class="thumb" href="img/thumbs/12.jpg"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+    <!--end-->
+
+
+
+
+<!-- meal gallery ends-->
+
